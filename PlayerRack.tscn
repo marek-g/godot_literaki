@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://PlayerRack.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 2 )
+
+[node name="PlayerRack" type="GridContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -836.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 9
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StarLabel" type="Label" parent="."]
+margin_right = 29.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = " * "
